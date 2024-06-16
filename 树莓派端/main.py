@@ -9,6 +9,8 @@ freq = "152650000"  #寻呼机频率，单位Hz
 rate = "1200"  #数据速率，512/1200/2400
 function = "3"  #默认功能位
 addr = "0027741" #寻呼机地址
+pocsagPath = "sudo /root/rpitx/pocsag" #指定rpitx/pocsag程序路径
+
 charString = ""
 
 broker = 'broker.emqx.io'
@@ -56,7 +58,7 @@ def sendPocsag(addr, message):
                 charset = 'ascii'
             convertSpecialChar(c)
             charString += chr(c)
-    cmd = f"printf \"{addr}:{charString}\" | sudo /root/rpitx/pocsag -f {freq} -r {rate} -b {function}"
+    cmd = f"printf \"{addr}:{charString}\" | {pocsagPath} -f {freq} -r {rate} -b {function}"
     os.system(cmd)
     # print(cmd)
 
