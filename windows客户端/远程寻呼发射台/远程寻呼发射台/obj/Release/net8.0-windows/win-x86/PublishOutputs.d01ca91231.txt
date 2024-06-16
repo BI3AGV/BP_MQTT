@@ -1,0 +1,7 @@
+C:\Users\BI3AGV\source\repos\远程寻呼发射台\远程寻呼发射台\bin\Release\net8.0-windows\publish\win-x86\远程寻呼发射台.pdb
+C:\Users\BI3AGV\source\repos\远程寻呼发射台\远程寻呼发射台\bin\Release\net8.0-windows\publish\win-x86\D3DCompiler_47_cor3.dll
+C:\Users\BI3AGV\source\repos\远程寻呼发射台\远程寻呼发射台\bin\Release\net8.0-windows\publish\win-x86\PenImc_cor3.dll
+C:\Users\BI3AGV\source\repos\远程寻呼发射台\远程寻呼发射台\bin\Release\net8.0-windows\publish\win-x86\PresentationNative_cor3.dll
+C:\Users\BI3AGV\source\repos\远程寻呼发射台\远程寻呼发射台\bin\Release\net8.0-windows\publish\win-x86\vcruntime140_cor3.dll
+C:\Users\BI3AGV\source\repos\远程寻呼发射台\远程寻呼发射台\bin\Release\net8.0-windows\publish\win-x86\wpfgfx_cor3.dll
+C:\Users\BI3AGV\source\repos\远程寻呼发射台\远程寻呼发射台\bin\Release\net8.0-windows\publish\win-x86\远程寻呼发射台.exe
