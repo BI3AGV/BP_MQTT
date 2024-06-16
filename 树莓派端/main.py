@@ -20,7 +20,7 @@ client_id = f'python-mqtt-{random.randint(0, 100)}'
 username = 'emqx'
 password = '**********'
 
-rpitxBusyFlag = False;
+rpitxBusyFlag = False
 def convertSpecialChar(c):
     # print(c)
     global charString
@@ -35,7 +35,7 @@ def convertSpecialChar(c):
 
 def sendPocsag(addr, message):
     global rpitxBusyFlag
-    rpitxBusyFlag = True;
+    rpitxBusyFlag = True
     function = "1"
     if message == "":
         function = "0"
@@ -60,7 +60,7 @@ def sendPocsag(addr, message):
             charString += chr(c)
     cmd = f"printf \"{addr}:{charString}\" | {pocsagPath} -f {freq} -r {rate} -b {function}"
     os.system(cmd)
-    rpitxBusyFlag = False;
+    rpitxBusyFlag = False
     # print(cmd)
 
 def connect_mqtt() -> mqtt_client:
@@ -80,7 +80,7 @@ def connect_mqtt() -> mqtt_client:
 
 def subscribe(client: mqtt_client):
     def on_message(client, userdata, msg):
-        global rpitxBusyFlag;
+        global rpitxBusyFlag
         if not rpitxBusyFlag:
             sendPocsag(addr, msg.payload.decode())
         print(f"Received `{msg.payload.decode()}` from `{msg.topic}` topic")
